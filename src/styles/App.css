@@ -1,0 +1,126 @@
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+.container {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.amount-form {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.qr-container {
+  margin-top: 20px;
+}
+
+.qr-code {
+  max-width: 300px;
+  height: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: white;
+}
+
+.error {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.qr-loading {
+  color: #3498db;
+  font-weight: bold;
+}
+
+.payment-status {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+.status-box {
+  text-align: center;
+}
+
+.status-box.success {
+  border-left: 4px solid #28a745;
+}
+
+.status-box.pending {
+  border-left: 4px solid #ffc107;
+}
+
+.status-box.failed {
+  border-left: 4px solid #dc3545;
+}
+
+.check-again-btn {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.check-again-btn:hover {
+  background-color: #138496;
+}
+
+.check-again-btn:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
