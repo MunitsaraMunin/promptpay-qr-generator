@@ -18,6 +18,13 @@ app.use(express.json());
 const PROMPTPAY_ID = '0812345678';
 const ID_TYPE = 'PHONE';
 
+// ฟังก์ชันสร้าง Payload สำหรับ QR Code
+function generatePromptPayPayload(PROMPTPAY_ID, ID_TYPE, amount) {
+  // สร้าง payload สำหรับ QR Code (ตามรูปแบบที่ธนาคารกำหนด)
+  const payload = `00020101021229370016A00000067701011101110000000000000000000000000000000000000000000000000000000000000000000000${PROMPTPAY_ID}${ID_TYPE}${amount.toFixed(2)}84080025A0`;
+  return payload;
+}
+
 // สร้างฟังก์ชันตรวจสอบการชำระเงิน (Mock)
 async function checkPaymentStatus(transactionId) {
   // ในระบบจริงควรเรียก API ธนาคารที่นี่
